@@ -1,0 +1,51 @@
+.header {
+    background: #F4F5F7;
+}
+
+.header__container {
+    padding: 30px 15px;
+}
+
+.header__body {
+    position: relative;
+    background: linear-gradient(55.95deg, #1E212C 0%, #F75E05 100%) left top / 100% 10px no-repeat, linear-gradient(55.95deg, #1E212C 0%, #F75E05 100%) left bottom / 100% 10px no-repeat;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.header__body::before,
+.header__body::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.header__body::before {
+    left: 0px;
+    border-radius: 20px 0px 0px 20px;
+    border: 10px solid #1E212C;
+    border-right: none;
+}
+
+.header__body::after {
+    right: 0px;
+    border-radius: 0px 20px 20px 0px;
+    border: 10px solid #F75E05;
+    border-left: none;
+}
+
+.header__title {
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(55.95deg, #1E212C 0%, #F75E05 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}

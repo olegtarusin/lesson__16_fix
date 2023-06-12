@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 16</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commun.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/page2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <h1 class="header__title">homework 16:forms and try changing</h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__page page">
+                <div class="page__container">
+                    <div class="page__body">
+                        <picture class="page__image">
+                            <img src="img/content/illustration.svg" alt="illustration">
+                        </picture>
+                        <div class="page__registration registration">
+                            <div class="registration__titlebox titlebox">
+                                <h6 class="titlebox__subtitle subtitle">Leave a request now and get 20% off!</h6>
+                                <h2 class="titlebox__title">Register for the course</h2>
+                            </div>
+                            <form action="#" class="registration__form form" method="POST"
+                                enctype="multipart/form-data">
+                                <div class="form__line">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" name="full-name" required class="form__input" id="name"
+                                        placeholder="Your full name" autocomplete="off">
+                                </div>
+                                <div class="form__line">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" required class="form__input" id="email"
+                                        placeholder="Your working email" autocomplete="off">
+                                </div>
+                                <div class="form__line">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" name="phone-number" required class="form__input" id="phone"
+                                        placeholder="Your phone number" autocomplete="off">
+                                </div>
+                                <div class="form__line line--button"><button class="form__button button"
+                                        type="submit">Join
+                                        the
+                                        course</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__page2 page2">
+                <div class="page2__container">
+                    <div class="page2__survey survey">
+                        <div class="survey__titlebox titlebox">
+                            <h6 class="titlebox__subtitle subtitle">this is our survey</h6>
+                            <h2 class="titlebox__title">Fill all form(or not)</h2>
+                        </div>
+                        <form action="#" class="survey__form form" enctype="multipart/form-data" method="GET">
+                            <button type="reset" class="form__button button button--reset">
+                                <img src="img/reset.svg" alt="">
+                            </button>
+                            <div class="form__box">
+                                <label for="text" class="form__subtitle subtitle">enter your username</label>
+                                <input type="text" id="text" name="full-name" class="form__text">
+                            </div>
+                            <div class="form__box">
+                                <label for="mail" class="form__subtitle subtitle">enter your email</label>
+                                <input type="email" id="mail" name="email" class="form__mail">
+                            </div>
+                            <div class="form__box">
+                                <h6 class="form__subtitle subtitle">
+                                    do you like our curse
+                                </h6>
+                                <div class="form__block">
+                                    <input type="radio" id="r1" value="+1" name="score" class="form__invise">
+                                    <label for="r1" class="form__radio">yes</label>
+
+                                    <input type="radio" id="r2" value="-1" name="score" class="form__invise">
+                                    <label for="r2" class="form__radio">no</label>
+                                </div>
+                            </div>
+                            <div class="form__box box--line">
+                                <label for="age" class="form__subtitle subtitle">i am</label>
+                                <input class="form__age" type="number" name="age" id="age" placeholder="--">
+                                <label for="age" class="form__subtitle subtitle">years old</label>
+                            </div>
+                            <div class="form__box box--textarea">
+                                <label for="textarea" class="form__subtitle subtitle">tell somthing about
+                                    yourself</label>
+                                <textarea class="form__textarea" name="short-info" id="textarea"
+                                    placeholder="give short information about yourself"></textarea>
+                            </div>
+                            <div class="form__box">
+                                <h6 class="form__subtitle subtitle">choose statment about yourself</h6>
+
+                                <input class="form__invise" type="checkbox" name="online" id="chb1" value="yes">
+                                <label for="chb1" class="form__checkbox">i like online classes?</label>
+
+                                <input class="form__invise" type="checkbox" name="personal" id="chb2" value="yes">
+                                <label for="chb2" class="form__checkbox">i like personal lessons?</label>
+
+                                <input class="form__invise" type="checkbox" name="exp" id="chb3" value="no">
+                                <label for="chb3" class="form__checkbox">i have never learnt before? </label>
+
+                                <input class="form__invise" type="checkbox" name="time" id="chb4" value="yes">
+                                <label for="chb4" class="form__checkbox">i have 2-3 free hour in day?</label>
+
+                                <input class="form__invise" type="checkbox" name="morning" id="chb5" value="yes">
+                                <label for="chb5" class="form__checkbox">i want visite classes in the morning?</label>
+                            </div>
+                            <div class="form__box">
+                                <label for="file" class="form__subtitle subtitle"> add your photo</label>
+                                <input type="file" class="form__file" name="user-img" id="file" multiple
+                                    accept="image/jpeg, image/webp">
+                            </div>
+                            <button type="submit" class="form__button button button--submit">
+                                <span>send information</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
